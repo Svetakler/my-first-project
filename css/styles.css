@@ -1,3 +1,7 @@
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: "Inter", sans-serif;
   color: #fbfbfb;
@@ -42,6 +46,38 @@ img {
   display: block;
   max-width: 100%;
   height: auto;
+}
+
+@media (min-width: 768px) {
+  .container {
+    max-width: 768px;
+  }
+
+  .section {
+    padding-top: 75px;
+    padding-bottom: 75px;
+  }
+
+  .section-title {
+    font-size: 48px;
+  }
+
+  .main-btn {
+    font-size: 18px;
+    line-height: 1.1;
+  }
+}
+
+@media (min-width: 1280px) {
+  .container {
+    max-width: 1280px;
+  }
+}
+
+@media (min-width: 1440px) {
+  .container {
+    max-width: 1440px;
+  }
 }
 
 /* header */
@@ -332,7 +368,7 @@ img {
   margin: 0 auto;
 }
 
-.container.hero-container {
+.hero {
   padding: 260px 20px 302px 20px;
   background-repeat: no-repeat;
   background-size: cover;
@@ -392,7 +428,7 @@ img {
 
 @media screen and (-webkit-min-device-pixel-ratio: 2),
   (min-resolution: 192dpi) {
-  .hero-container {
+  .hero {
     background-image: linear-gradient(
         rgba(17, 19, 31, 0.39),
         rgba(17, 19, 31, 0)
@@ -407,7 +443,7 @@ img {
     padding: 0 32px;
   }
 
-  .container.hero-container {
+  .hero {
     padding: 280px 32px 282px;
     background-image: linear-gradient(
         rgba(17, 19, 31, 0.39),
@@ -418,7 +454,7 @@ img {
 
   @media screen and (-webkit-min-device-pixel-ratio: 2),
     (min-resolution: 192dpi) {
-    .hero-container {
+    .hero {
       background-image: linear-gradient(
           rgba(17, 19, 31, 0.39),
           rgba(17, 19, 31, 0)
@@ -461,7 +497,7 @@ img {
     padding: 0 50px;
   }
 
-  .container.hero-container {
+  .hero {
     padding: 235px 140px 215px;
 
     background-image: linear-gradient(
@@ -473,7 +509,7 @@ img {
 
   @media screen and (-webkit-min-device-pixel-ratio: 2),
     (min-resolution: 192dpi) {
-    .container.hero-container {
+    .hero {
       background-image: linear-gradient(
           rgba(17, 19, 31, 0.39),
           rgba(17, 19, 31, 0)
@@ -495,6 +531,7 @@ img {
     line-height: 1.1;
   }
 }
+
 /* about us */
 .about-us-section {
   min-width: 320px;
